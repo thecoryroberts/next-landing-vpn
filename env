@@ -1,0 +1,6 @@
+# These are retrieved from your project at app.tina.io
+NEXT_PUBLIC_TINA_CLIENT_ID="7977646a-10d9-4ab5-84e4-0fcdc777030e"
+TINA_TOKEN="7ec905095c9289621062d8756299a4efced7a471"
+
+# This is set by default CI with Netlify/Vercel/Github, but can be overriden
+NEXT_PUBLIC_TINA_BRANCH=***
