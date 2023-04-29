@@ -46,7 +46,7 @@ const Team = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/Team/FeAvatar.png"
                     width={145}
                     height={165}
                     alt="Natalie Thomas"
@@ -75,7 +75,7 @@ const Team = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                 src="/assets/Team/FeAvatar.png"
                     width={145}
                     height={165}
                     alt="Natalie Rogers"
@@ -104,7 +104,7 @@ const Team = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/Team/CoryAvatar.png"
                     width={145}
                     height={165}
                     alt="Natalie Thomas"
