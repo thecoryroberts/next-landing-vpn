@@ -50,8 +50,8 @@ const Hero = ({
                   src="/assets/donation-box.jpg"
                   alt="Donation Box"
                   quality={100}
-                  width={612}
-                  height={383}
+                  width={400}
+                  height={400}
                   layout="responsive"
                 />
               </motion.div>
