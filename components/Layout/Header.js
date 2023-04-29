@@ -23,9 +23,9 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-          <div class="h-8 w-auto"><a href="/" class="text-lg"><span class="font-bold text-slate-800">Give</span><span class="text-slate-500">Comfort, Inc.</span>
-        </a></div>
-                 </div>
+            <div class="h-8 w-auto"><a href="/" class="text-lg"><span class="font-bold text-slate-800">Give</span><span class="text-slate-500">Comfort, Inc.</span>
+            </a></div>
+          </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
@@ -103,7 +103,7 @@ const Header = () => {
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+                Sign In
               </a>
             </Link>
             <ButtonOutline>Sign Up</ButtonOutline>
