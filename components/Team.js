@@ -122,7 +122,7 @@ const Team = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
+         <div className="flex flex-col w-full my-16"> 
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -140,7 +140,7 @@ const Team = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
+              { <Netflix className="h-18 w-auto" /> }
               <img
                 src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"
