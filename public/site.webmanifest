@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "LaslesVPN",
-  "short_name": "LaslesVPN",
+  "name": "Give Comfort, Inc.",
+  "short_name": "Give, Comfort, Inc.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#F53838",
-  "description": "LaslesVPN Best VPN For Privacy, Country and Cheapest.",
+  "description": "Give Comfort, Inc. Best VPN For Privacy, Country and Cheapest.",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",
