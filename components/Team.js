@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-function Team() {
+const Team = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -37,7 +37,7 @@ function Team() {
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
-                  scale: 1.1,
+                  scale : 1.1,
                   transition: {
                     duration: .2
                   }
@@ -48,7 +48,8 @@ function Team() {
                     src="/assets/Team/FeAvatar.png"
                     width={145}
                     height={165}
-                    alt="Natalie Thomas" />
+                    alt="Natalie Thomas"
+                  />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Natalie Thomas
@@ -57,15 +58,15 @@ function Team() {
                   <li className="relativ custom-list my-2">
                     Owner/CEO
                   </li>
-                </ul>
+                </ul>              
               </motion.div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
+            <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
-                  scale: 1.1,
+                  scale : 1.1,
                   transition: {
                     duration: .2
                   }
@@ -73,27 +74,28 @@ function Team() {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Team/FeAvatar.png"
+                 src="/assets/Team/FeAvatar.png"
                     width={145}
                     height={165}
-                    alt="Natalie Rogers" />
+                    alt="Natalie Rogers"
+                  />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Emmilee Doe
+                 Emmilee Doe
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative custom-list my-2">
-                    Board Member
+                   Board Member
                   </li>
-                </ul>
+                </ul>              
               </motion.div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
+            <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
-                  scale: 1.1,
+                  scale : 1.1,
                   transition: {
                     duration: .2
                   }
@@ -104,67 +106,68 @@ function Team() {
                     src="/assets/Team/CoryAvatar.png"
                     width={145}
                     height={165}
-                    alt="Natalie Thomas" />
+                    alt="Natalie Thomas"
+                  />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Cory Roberts
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative custom-list my-2">
-                    Developer
+                  Developer
                   </li>
-                </ul>
+                </ul>              
               </motion.div>
             </ScrollAnimationWrapper>
           </div>
         </div>
-        {/* /*   <div className="flex flex-col w-full my-16">
-               <ScrollAnimationWrapper>
-                  <motion.h3
-                    variants={scrollAnimation}
-                    className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-                   GCI wouldn't be possible without the support from community donations and sponsors.{" "}
-                  </motion.h3>
-                  <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-                    
-                  </motion.p>
-                </ScrollAnimationWrapper>
-                <ScrollAnimationWrapper>
-                  <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}>
-                    <Maps className="w-full h-auto" />
-                  </motion.div>
-                </ScrollAnimationWrapper>
-                <ScrollAnimationWrapper>
-                  <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-                    { <Netflix className="h-18 w-auto" /> }
-                    <img
-                      src="/assets/Icon/amazon.png"
-                      className="h-14 w-auto mt-4 lg:mt-2"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/Icon/netflix.png"
-                      className="h-14 w-auto mt-2 lg:mt-0"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/Icon/reddit.png"
-                      className="h-12 w-auto mt-2 lg:mt-0"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/Icon/discord.png"
-                      className="h-14 w-auto mt-2 lg:mt-0"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/Icon/spotify.png"
-                      className="h-12 w-auto mt-2 lg:mt-0"
-                      alt=""
-                    />
-                  </motion.div>
-                </ScrollAnimationWrapper>
-              </div> */}
+      {/* /*   <div className="flex flex-col w-full my-16">
+         <ScrollAnimationWrapper>
+            <motion.h3
+              variants={scrollAnimation}
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
+             GCI wouldn't be possible without the support from community donations and sponsors.{" "}
+            </motion.h3>
+            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
+              
+            </motion.p>
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper>
+            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
+              <Maps className="w-full h-auto" />
+            </motion.div>
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper>
+            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
+              { <Netflix className="h-18 w-auto" /> }
+              <img
+                src="/assets/Icon/amazon.png"
+                className="h-14 w-auto mt-4 lg:mt-2"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/netflix.png"
+                className="h-14 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/reddit.png"
+                className="h-12 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/discord.png"
+                className="h-14 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/spotify.png"
+                className="h-12 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+            </motion.div>
+          </ScrollAnimationWrapper>
+        </div> */}
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -186,7 +189,7 @@ function Team() {
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
-            <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
+            <motion.div variants={scrollAnimation} custom={{duration: 3}}>
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
@@ -199,13 +202,13 @@ function Team() {
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
                 style={{ filter: "blur(114px)" }}
-              ></div>
+                ></div>
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Team;
