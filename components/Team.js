@@ -14,7 +14,7 @@ const Team = () => {
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="team"
+      id="Team"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
@@ -49,7 +49,7 @@ const Team = () => {
                     src="/assets/Free.png"
                     width={145}
                     height={165}
-                    alt="Natalie Rogers"
+                    alt="Natalie Thomas"
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
@@ -107,7 +107,7 @@ const Team = () => {
                     src="/assets/Free.png"
                     width={145}
                     height={165}
-                    alt="Natalie Rogers"
+                    alt="Natalie Thomas"
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
@@ -212,4 +212,4 @@ const Team = () => {
   );
 };
 
-export default Pricing;
+export default Team;
