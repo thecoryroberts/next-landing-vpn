@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
+  "Patient Comfort Wishlists.",
+  "Volunteer and Donation driven.",
+  "Community Outreach.",
+  "Empowering our commnity with comfort."
 ]
 
 const Feature = () => {
@@ -24,7 +24,7 @@ const Feature = () => {
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
               src="/assets/donate-group.jpg"
-              alt="VPN Illustrasi"
+              alt="Group Donation"
               layout="responsive"
               quality={100}
               height={414}
