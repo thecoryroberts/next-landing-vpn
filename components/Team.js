@@ -122,8 +122,8 @@ const Team = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-         <div className="flex flex-col w-full my-16"> 
-          <ScrollAnimationWrapper>
+      {/* /*   <div className="flex flex-col w-full my-16">
+         <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
@@ -168,7 +168,7 @@ const Team = () => {
               />
             </motion.div>
           </ScrollAnimationWrapper>
-        </div>
+        </div> */}
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
