@@ -1,5 +1,4 @@
 import Feature from "../components/Feature";
-import Team from "..components/Team";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
@@ -11,7 +10,6 @@ export default function Home() {
       <Layout>
         <Hero />
         <Feature />
-        <Team />
       </Layout>
     </>
   );
