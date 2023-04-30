@@ -4,7 +4,7 @@ import { defineConfig } from "tinacms";
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
-  branch,
+  branch: "main",
   clientId: "7977646a-10d9-4ab5-84e4-0fcdc777030e", // Get this from tina.io
   token: "7ec905095c9289621062d8756299a4efced7a471", // Get this from tina.io
 
@@ -21,28 +21,123 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        label: 'Blog Posts',
+        name: 'post',
+        path: 'posts',
+        format: 'mdx',
+        ui: {
+          router: ({ document }) => {
+            return `/blog/${document._sys.filename}`;
+          },
+        },
         fields: [
           {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
+            type: 'string',
+            label: 'Title',
+            name: 'title',
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
+            type: 'string',
+            label: 'Description',
+            name: 'description',
+          },
+          {
+            type: 'string',
+            label: 'Date',
+            name: 'date',
+          },
+          {
+            type: 'string',
+            label: 'Tags',
+            name: 'tags',
+          },
+          {
+            type: 'string',
+            label: 'Image URL',
+            name: 'imageUrl',
+          },
+          {
+            type: 'rich-text',
+            label: 'Blog Post Body',
+            name: 'body',
             isBody: true,
+            templates: [
+              {
+                name: 'Quote',
+                label: 'Quote',
+                fields: [
+                  {
+                    type: 'string',
+                    name: 'content',
+                    label: 'Content',
+                  },
+                  {
+                    type: 'string',
+                    name: 'author',
+                    label: 'Author',
+                  },
+                  {
+                    type: 'string',
+                    name: 'cite',
+                    label: 'Cite',
+                  },
+                ],
+              },
+              {
+                name: 'ArticleImage',
+                label: 'ArticleImage',
+                fields: [
+                  {
+                    type: 'string',
+                    name: 'src',
+                    label: 'Src',
+                  },
+                  {
+                    type: 'string',
+                    name: 'caption',
+                    label: 'Caption',
+                  },
+                ],
+              },
+              {
+                name: 'Code',
+                label: 'Code',
+                fields: [
+                  {
+                    type: 'string',
+                    name: 'code',
+                    label: 'Code',
+                  },
+                  {
+                    type: 'string',
+                    name: 'language',
+                    label: 'Language',
+                  },
+                  {
+                    type: 'string',
+                    name: 'selectedLines',
+                    label: 'Selected Lines',
+                  },
+                  {
+                    type: 'boolean',
+                    name: 'withCopyButton',
+                    label: 'With Copy Button',
+                  },
+                  {
+                    type: 'boolean',
+                    name: 'withLineNumbers',
+                    label: 'With Line Numbers',
+                  },
+                  {
+                    type: 'string',
+                    name: 'caption',
+                    label: 'Caption',
+                  },
+                ],
+              },
+            ],
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
       },
     ],
   },
