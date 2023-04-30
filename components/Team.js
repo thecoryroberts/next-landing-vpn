@@ -6,16 +6,16 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Team from "./components";
+import Team from "../components";
 
 const Team = () => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
-  return (
-    <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="team"
-    >
+    const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  
+    return (
+      <div
+        className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+        id="team"
+      >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
