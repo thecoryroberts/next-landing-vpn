@@ -1,5 +1,5 @@
 import Feature from "../components/Feature";
-import Team from ".../components/Team";
+import Team from "..components/team";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
